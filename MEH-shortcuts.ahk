@@ -32,6 +32,13 @@
   Return
 }
 
+^!+e::{
+  If WinExist("ahk_exe explorer.exe")
+  Else
+    Run "explorer.exe" 
+  Return
+}
+
 ^!+j::{
   WinWait "A"
   WinMove 0, 0, A_ScreenWidth/2, A_ScreenHeight
