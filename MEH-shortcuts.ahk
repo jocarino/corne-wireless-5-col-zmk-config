@@ -34,6 +34,7 @@
 
 ^!+e::{
   If WinExist("ahk_exe explorer.exe")
+    WinActivate
   Else
     Run "explorer.exe" 
   Return
