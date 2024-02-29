@@ -33,7 +33,7 @@
 }
 
 ^!+e::{
-  If WinExist("ahk_exe explorer.exe")
+  If WinExist("ahk_exe explorer.exe") And WinExist("ahk_class CabinetWClass")
     WinActivate
   Else
     Run "explorer.exe" 
