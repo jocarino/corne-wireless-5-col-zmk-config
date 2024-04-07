@@ -57,21 +57,21 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |____|  Y  |  U   |  I   |  O   |  P  |
-// |  A  |  S  |  D  |  F  |  G  |____|  H  |  J   |  K   |  L   |  ;: | 
+// |  A  |  S  |  D  |  F  |  G  |____|  H  |  J   |  K   |  L   |  ;: |
 // |  Z  |  X  |  C  |  V  |  B  |____|  N  |  M   |  ,<  |  .>  |  /? |
 //        | LC | SPC (MEH) | LWR |____| RSE |  ENT(LCTL) | BSPC |
                         display-name = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
-   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     &htm SEMI COLON
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &htm COMMA LT  &htm DOT GT  &htm FSLH QMARK
-        &kp LCTL &mt LC(LS(LALT)) SPC &mo 1     &mo 2   &htm RET LCTL  &kp BSPC
+   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     &htm COLON SEMI
+   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &htm LT COMMA  &htm GT DOT  &htm QMARK FSLH
+        &kp LCTL &mt LC(LS(LALT)) SPC &mo 1     &mo 2   &htm LCTL RET  &kp BSPC
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | !   |  "  |  #  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |
+// | !   |  "  |  #  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |tODcautoDaurrytoday i tryed tO write like this is very hard but is quite more comlf'     
 // |     |     | GUI | TAB |LSHFT|____| LFT | DWN |  UP | RGT |  '@ |
 // |     |     |     |     |     |____|   ! |  "  |  $  |  %  |  @  |
 //             | --- | --- | --- |____|     | ESC(LCTL) | LALT |
@@ -80,7 +80,7 @@
    &kp EXCL &kp DQT  &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
    &trans   &trans   &kp LGUI &kp TAB  &kp LSHFT    &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm APOS AT 
    &trans   &trans   &trans   &trans   &trans        &kp EXCL  &kp DQT    &kp DLLR        &kp PRCNT &kp AT 
-                &trans   &trans    &trans           &trans &htm ESC LCTL  &kp LALT   
+                &trans   &trans    &trans           &trans &htm LCTL ESC  &kp LALT   
                         >;
                 };
 
@@ -96,7 +96,7 @@
    &trans    AS(N1)    AS(N2)    AS(N3)  &trans        &trans    &kp LBRC  &kp RBRC  AS(MINUS)   AS(EQUAL)
    AS(GRAVE) AS(N4)    AS(N5)    AS(N6)  &trans        &kp LSHFT &kp LPAR  &kp RPAR  &kp HASH  &kp TILDE
    AS(BSLH)  AS(N7)    AS(N8)    AS(N9)  AS(N0)        &trans    &kp LBKT  &kp RBKT  AS(COMMA)  AS(GT)
-                       &kp LALT  &htm ESC LCTL   &trans     &trans   &trans    &trans
+                       &kp LALT  &htm LCTL ESC   &trans     &trans   &trans    &trans
                         >;
                 };
 
