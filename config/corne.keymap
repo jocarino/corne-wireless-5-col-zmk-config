@@ -71,15 +71,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | !   |  "  |  #  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |tODcautoDaurrytoday i tryed tO write like this is very hard but is quite more comlf'     
+// | !   |  "  |  #  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |     
 // |     |     | GUI | TAB |LSHFT|____| LFT | DWN |  UP | RGT |  '@ |
-// |     |     |     |     |     |____|   ! |  "  |  $  |  %  |  @  |
+// |     |     |     |     |     |____|   ! | HME |  $  |  %  |  @  |
 //             | --- | --- | --- |____|     | ESC(LCTL) | LALT |
                         display-name = "Lower";
                         bindings = <
    &kp EXCL &kp DQT  &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-   &trans   &trans   &kp LGUI &kp TAB  &kp LSHFT    &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm APOS AT 
-   &trans   &trans   &trans   &trans   &trans        &kp EXCL  &kp DQT    &kp DLLR        &kp PRCNT &kp AT 
+   &trans   &trans   &kp LGUI &kp TAB  &kp LSHFT    &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm AT APOS
+   &trans   &trans   &trans   &trans   &trans        &kp HOME  &kp END    &kp DLLR        &kp PRCNT &kp AT
                 &trans   &trans    &trans           &trans &htm LCTL ESC  &kp LALT   
                         >;
                 };
