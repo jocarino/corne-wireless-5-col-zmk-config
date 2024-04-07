@@ -9,10 +9,10 @@
 }
 
 ^!+n::{
-  If WinExist("ahk_exe notion.exe")
+  If WinExist("ahk_exe Notion.exe")
     WinActivate
   Else
-    Run "notion.exe" 
+    Run "C:\Users\{user}\AppData\Local\Programs\Notion\Notion.exe" 
   Return
 }
 
@@ -20,7 +20,7 @@
   If WinExist("ahk_exe Code.exe")
     WinActivate
   Else
-    Run "Code.exe" 
+    Run "C:\Users\{user}\AppData\Local\Programs\Microsoft VS Code\Code.exe" 
   Return
 }
 
@@ -46,9 +46,20 @@
   Return
 }
 
-
 ^!+k::{
   WinWait "A"
   WinMove A_ScreenWidth/2, 0, A_ScreenWidth/2, A_ScreenHeight
+  Return
+}
+
+^!+u::{
+  WinWait "A"
+  WinMaximize
+  Return
+}
+
+^!+i::{
+  WinWait "A"
+  WinMinimize
   Return
 }
