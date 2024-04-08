@@ -37,7 +37,7 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
+            tapping_term_ms = <300>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -69,32 +69,32 @@
                         >;
                 };
 
-                lower_layer {
+                left_layer {
 // -----------------------------------------------------------------------------------------
 // | !   |  "  |  #  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |     
 // |     |     | GUI | TAB |LSHFT|____| LFT | DWN |  UP | RGT |  '@ |
-// |     |     |     |     |     |____|   ! | HME |  $  |  %  |  @  |
+// |     |     |     |     |     |____|   ! | HME | END |  %  |  @  |
 //             | --- | --- | --- |____|     | ESC(LCTL) | LALT |
-                        display-name = "Lower";
+                        display-name = "Left";
                         bindings = <
-   &kp EXCL &kp DQT  &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-   &trans   &trans   &kp LGUI &kp TAB  &kp LSHFT    &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm AT APOS
-   &trans   &trans   &trans   &trans   &trans        &kp HOME  &kp END    &kp DLLR        &kp PRCNT &kp AT
-                &trans   &trans    &trans           &trans &htm LCTL ESC  &kp LALT   
+   &kp EXCL &kp DQT  &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
+   &trans   &trans   &kp LGUI &kp TAB  &kp LSHFT      &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm AT APOS
+   &trans   &trans   &trans   &trans   &trans          &kp HOME  &kp END    &kp DLLR      &kp PRCNT &kp AT
+                &trans   &trans    &trans             &trans &htm LCTL ESC  &kp LALT 
                         >;
                 };
 
-                raise_layer {
+                right_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  1! |  2@ |  3#  |     |____|     |  {  |  }  |  -_ |      |
-// | `~  |  4$ |  5% |  6^  |     |____|LSHFT|  (  |  )  |  #  |   ~  |
-// | \|  |  7& |  8* |  9(  |  0) |____|     |  [  |  ]  |  ,< |  .>  |                   
+// |     |  1! |  2" |  3£  |     |____|     |  {  |  }  |  -_ |      |
+// | `~  |  4$ |  5% |  6^  |     |____|LSHFT|  (  |  )  |  £  |   ~  |
+// | \|  |  7& |  8* |  9(  |  0) |____|     |  [  |  ]  |  ,< |  .>  |
 //     | LSHIFT | ESC(LCTL) | --- |____| --- | --- | --- |
-                        display-name = "Raise";
+                        display-name = "right";
                         bindings = <
 
    &trans    AS(N1)    AS(N2)    AS(N3)  &trans        &trans    &kp LBRC  &kp RBRC  AS(MINUS)   AS(EQUAL)
-   AS(GRAVE) AS(N4)    AS(N5)    AS(N6)  &trans        &kp LSHFT &kp LPAR  &kp RPAR  &kp HASH  &kp TILDE
+   AS(GRAVE) AS(N4)    AS(N5)    AS(N6)  &trans        &kp LSHFT &kp LPAR  &kp RPAR  &kp HASH  &kp POUND
    AS(BSLH)  AS(N7)    AS(N8)    AS(N9)  AS(N0)        &trans    &kp LBKT  &kp RBKT  AS(COMMA)  AS(GT)
                        &kp LALT  &htm LCTL ESC   &trans     &trans   &trans    &trans
                         >;
