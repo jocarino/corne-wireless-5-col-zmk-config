@@ -59,13 +59,13 @@
 // |  Q  |  W  |  E  |  R  |  T  |____|  Y  |  U   |  I   |  O   |  P  |
 // |  A  |  S  |  D  |  F  |  G  |____|  H  |  J   |  K   |  L   |  ;: |
 // |  Z  |  X  |  C  |  V  |  B  |____|  N  |  M   |  ,<  |  .>  |  /? |
-//        | LC | SPC (MEH) | LWR |____| RSE |  ENT(LCTL) | BSPC |
+//        | LSHFT | SPC (MEH) | LWR |____| RSE |  ENT(LCTL) | BSPC |
                         display-name = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     &htm COLON SEMI
    AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &htm LT COMMA  &htm GT DOT  &htm QMARK FSLH
-        &kp LCTL &mt LC(LS(LALT)) SPC &mo 1     &mo 2   &htm LCTL RET  &kp BSPC
+        &kp LSHFT &mt LC(LS(LALT)) SPC &mo 1     &mo 2   &htm LCTL RET  &kp BSPC
                         >;
                 };
 
