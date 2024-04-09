@@ -73,10 +73,10 @@
                 left_layer {
 // @ and " symbols are swapped                     
 // -----------------------------------------------------------------------------------------
-// | !   |  "  |  £  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |     
-// |     |     | GUI | TAB |LSHFT|____| LFT | DWN |  UP | RGT |  '@ |
-// |     |     |     |     |LCTRL|____|   ! | HME | END |  %  |  "  |
-//             | --- | --- | --- |____|     | ESC(LCTL) | LALT |
+// | !   |  "    |  £  |  $  |  %  |____|  ^  |  &  |  *  |  (  |  )  |     
+// |     |LA(TAB)| GUI | LC  |LSHFT|____| LFT | DWN |  UP | RGT |  '@ |
+// |     |       |LC(C)|LC(V)| TAB |____|   ! | HME | END |  %  |  "  |
+//               | --- | --- | --- |____|     | ESC(LCTL) | LALT |
                         display-name = "Left";
                         bindings = <
    &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
