@@ -79,9 +79,9 @@
 //             | --- | --- | --- |____|     | ESC(LCTL) | LALT |
                         display-name = "Left";
                         bindings = <
-   &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT     &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-   &trans   &trans   &kp LGUI &kp TAB  &kp LSHFT     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm DQT APOS
-   &trans   &trans   &trans   &trans   &kp LCTL        &trans    &kp HOME  &kp END         &trans    &kp AT
+   &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
+   &trans   &kp LA(TAB) &kp LGUI  &kp LCTL  &kp LSHFT   &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &htm DQT APOS
+   &trans   &trans      &kp LC(C) &kp LC(V) &kp TAB     &trans    &kp HOME  &kp END         &trans    &kp AT
                 &trans   &trans    &trans            &trans  &htm LCTL ESC  &kp LALT 
                         >;
                 };
