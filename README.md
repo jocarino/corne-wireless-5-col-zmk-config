@@ -5,4 +5,4 @@ Modify corne.keymap and push. Download the binaries from github, and click twice
 ## AutoHotKey
 
 MEH-shortcuts.ahk, for the ctrl+shit+alt mod hot key shortcuts
-To run on windows startup, past the script in `C:\Users\{{user}}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+To run on windows startup, past the script in `C:\Users\{{user}}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Start-up`
