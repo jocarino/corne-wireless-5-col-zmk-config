@@ -40,6 +40,14 @@
   Return
 }
 
+^!+d::{
+  If WinExist("ahk_exe WindowsTerminal.exe")
+    WinActivate
+  Else
+    Run "WindowsTerminal.exe" 
+  Return
+}
+
 ^!+j::{
   WinWait "A"
   WinMove 0, 0, A_ScreenWidth/2, A_ScreenHeight
